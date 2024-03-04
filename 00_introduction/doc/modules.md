@@ -61,3 +61,30 @@ Now we can call the functions of our module in this way:
 ```erlang
 module_name:function_name(arguments). % This will run our function and return a value.
 ```
+# Input / Output 
+
+For output we usually use `io:format` like a printf in C but with the peculiarity that you pass a list with the values.
+
+```erlang
+io:format("Hello ~s, have a good day! ~n", ["Joan"]). 
+Hello Joan, have a good day! 
+ok
+```
+
+- `~n` for printf a newline.
+- `~s` Expects a strings.
+- `~d` Expects a decimal integer.
+- `~f` Expects a floats.
+- `~.2f` Expects a floats and formats it with two decimal places.         
+
+    ...
+
+For the input we can use the fun `io:read("text: "). `.
+```erlang
+% Asks the user the input and  read de input with get_line
+1> {ok,Input} = io:read("input: ").
+{ok,Input} = io:read("input: ").
+input: 1.
+{ok,1}
+2> Input = 1.
+```
