@@ -1,4 +1,4 @@
-% This programman implements a simple hello world program.
+% This programm implements a simple hello world program.
 
 -module(hello_world). % The module name must match the file name. The module name is used to call the functions in the file.
 

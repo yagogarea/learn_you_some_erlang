@@ -25,7 +25,7 @@ The structure of the modules is the following:
 **Functions Implementation**
 
 ```erlang
-function_name(arguments_number) ->  % If arg_num is zero, we cannot put the number ().
+function_name(arguments_number) -> % The function definition must end with an arrow.
     implementation.                 % The function implementation must end with a final point.
 ```
 

@@ -8,7 +8,7 @@ The basic operations in Erlang are similar to those in other languages, with the
 
 The `=` operator compares the equality of two elements. If they are equal, it returns the value; otherwise, it raises an exception. If the element on the left is empty, it will store the value on the right and operate the same way, except if it is `_`, in which case the value will not be stored.
 
-When we don't care about an element, we can use the underscore `_`` to indicate that the value of this element can be anything.
+When we don't care about an element, we can use the underscore `_` to indicate that the value of this element can be anything.
 
 To perform comparisons, we use `=:=` and `=/=` for equality, or strict equality, but if we don't want to differentiate between integers and floats, we must use `==` and `/=`.
 
@@ -211,7 +211,7 @@ Like in lists we can apply expressions to Bit Strings using the following syntax
 `[expresion || <<value>> <= <<bit_string>>, condition]. `
 
 ### References
-References are a data type that is guaranteed to be unique among connected nodes in a distributed Erlang system. You can create a reference with make_ref/0 and check if a data is a reference using is_reference/1.
+References are a data type that is guaranteed to be unique among connected nodes in a distributed Erlang system. You can create a reference with `make_ref/0` and check if a data is a reference using `is_reference/1`.
 
 ### Port Idenfiers and Pids
 
